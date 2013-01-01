@@ -100,5 +100,7 @@ var container = document.getElementById("container");
 
 function show()
 {
-  container.classList.add("show");
+  setTimeout(() => {
+    container.classList.add("show");
+  }, 500)
 }

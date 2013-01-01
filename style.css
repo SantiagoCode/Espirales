@@ -7,11 +7,13 @@ h1.txt
 {
   width: 750px;
   margin: 0;
+
   color: transparent;
   font-weight: bold;
   font-size: 10em;
   font-family: fantasy;
   letter-spacing: 10px;
+
   background-image: url("1.jpg");
   background-size: cover;
   background-position: bottom;
@@ -30,7 +32,7 @@ div.big_container
 
 div.container
 {
-  transition: 3s;
+  transition: 2s;
   opacity: 0;
 }
 
@@ -47,18 +49,20 @@ canvas.canvas
 button.btn
 {
   padding: 10px 20px;
-  border: none;
-  background-color: black;
+  margin-top: 15px;
+
   color: white;
   font-weight: bold;
-  transition: 0.3s;
+
+  border: none;
   box-shadow: 0 0 10px white;
-  margin-top: 15px;
+  background-color: black;
+  transition: 0.3s;
 }
 
 button.btn:active
 {
+  box-shadow: none;
   transform: scale(0.95);
   transition: 0.2s;
-  box-shadow: none;
 }
