@@ -1,0 +1,22 @@
+div.container
+{
+  padding: 0 30px;
+}
+canvas.canvas
+{
+  border: 2px solid black;
+}
+button.btn
+{
+  padding: 10px 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+button.btn:active
+{
+  transform: scale(0.95);
+  transition: 0.2s;
+}
