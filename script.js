@@ -94,7 +94,7 @@ function dibujante(color, xinicial, yinicial, xfinal, yfinal)
   lienzo.closePath();
 }
 
-
+// EFECTO DE CARGA
 window.addEventListener("load", show);
 var container = document.getElementById("container");
 
