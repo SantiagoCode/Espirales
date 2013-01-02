@@ -1,3 +1,13 @@
+body
+{
+  margin: 0;
+}
+
+div
+{
+
+}
+
 h1.txt
 {
   width: 750px;
@@ -14,14 +24,29 @@ h1.txt
   -webkit-background-clip: text;
 }
 
-div.container
+div.big_container
 {
   padding: 0 30px;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  box-sizing: border-box;
+}
+
+div.container
+{
+  transition: 3s;
+  opacity: 0;
+}
+
+.show
+{
+  opacity: 1 !important;
 }
 
 canvas.canvas
 {
-  border: 2px solid black;
+  border: 2px solid white;
 }
 
 button.btn
@@ -32,10 +57,13 @@ button.btn
   color: white;
   font-weight: bold;
   transition: 0.3s;
+  box-shadow: 0 0 10px white;
+  margin-top: 15px;
 }
 
 button.btn:active
 {
   transform: scale(0.95);
   transition: 0.2s;
+  box-shadow: none;
 }

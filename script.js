@@ -93,3 +93,12 @@ function dibujante(color, xinicial, yinicial, xfinal, yfinal)
   lienzo.lineCap = "round";
   lienzo.closePath();
 }
+
+
+window.addEventListener("load", show);
+var container = document.getElementById("container");
+
+function show()
+{
+  container.classList.add("show");
+}
