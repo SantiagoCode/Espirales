@@ -1,7 +1,7 @@
 var canvas = document.getElementById("canvas");
 var lienzo = canvas.getContext("2d");
 
-var grosor = 1;
+var grosor = 1.5;
 
 var color_r = "blue";
 var color_d = "red";
@@ -19,22 +19,29 @@ var yinicial_A = point_y * 1;
 var yinicial_B = point_y * 3;
 
 var step_one = 2;
-var suma = 4;
+var suma = 5;
 var step_two, x, y;
 
 var btn = document.getElementById("btn");
 btn.addEventListener("click", call);
 
+// esta funcion llama a las multiples espirales en multiples lugares
+// pra crear el efecto de degradado
 function call()
 {
-  generar(xinicial_A, yinicial_A, step_one);
-  generar(xinicial_B, yinicial_A, step_one);
-  generar(xinicial_C, yinicial_A, step_one);
-  generar(xinicial_A, yinicial_B, step_one);
-  generar(xinicial_B, yinicial_B, step_one);
-  generar(xinicial_C, yinicial_B, step_one);
+  // para que se marque bien
+  for (var i = 0; i < 3; i++)
+  {
+    generar(xinicial_A, yinicial_A, step_one);
+    generar(xinicial_B, yinicial_A, step_one);
+    generar(xinicial_C, yinicial_A, step_one);
+    generar(xinicial_A, yinicial_B, step_one);
+    generar(xinicial_B, yinicial_B, step_one);
+    generar(xinicial_C, yinicial_B, step_one);
+  }
 }
 
+// esta funcion crea la primera vuelta
 function generar(xinicial, yinicial, step_one)
 {
   for (var i = 0; i < 100; i++)
