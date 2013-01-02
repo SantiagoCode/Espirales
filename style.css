@@ -1,11 +1,29 @@
+h1.txt
+{
+  width: 750px;
+  margin: 0;
+  color: transparent;
+  font-weight: bold;
+  font-size: 10em;
+  font-family: fantasy;
+  letter-spacing: 10px;
+  background-image: url("1.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
 div.container
 {
   padding: 0 30px;
 }
+
 canvas.canvas
 {
   border: 2px solid black;
 }
+
 button.btn
 {
   padding: 10px 20px;
@@ -15,6 +33,7 @@ button.btn
   font-weight: bold;
   transition: 0.3s;
 }
+
 button.btn:active
 {
   transform: scale(0.95);
