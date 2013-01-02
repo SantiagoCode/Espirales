@@ -2,29 +2,37 @@ var canvas = document.getElementById("canvas");
 var lienzo = canvas.getContext("2d");
 
 var grosor = 1;
+
 var color_r = "blue";
 var color_d = "red";
 var color_l = "yellow";
 var color_u = "green";
 
-var xinicial_A = 125;
-var xinicial_B = 375;
-var xinicial_C = 625;
+var point_x = canvas.width / 6;
+var point_y = canvas.height / 4;
 
-var yinicial = 125;
+var xinicial_A = point_x * 1;
+var xinicial_B = point_x * 3;
+var xinicial_C = point_x * 5;
+
+var yinicial_A = point_y * 1;
+var yinicial_B = point_y * 3;
 
 var step_one = 2;
-var step_two, x, y;
 var suma = 4;
+var step_two, x, y;
 
 var btn = document.getElementById("btn");
 btn.addEventListener("click", call);
 
 function call()
 {
-  generar(xinicial_A, yinicial, step_one);
-  generar(xinicial_B, yinicial, step_one);
-  generar(xinicial_C, yinicial, step_one);
+  generar(xinicial_A, yinicial_A, step_one);
+  generar(xinicial_B, yinicial_A, step_one);
+  generar(xinicial_C, yinicial_A, step_one);
+  generar(xinicial_A, yinicial_B, step_one);
+  generar(xinicial_B, yinicial_B, step_one);
+  generar(xinicial_C, yinicial_B, step_one);
 }
 
 function generar(xinicial, yinicial, step_one)
